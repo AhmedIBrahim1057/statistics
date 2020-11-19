@@ -1,0 +1,230 @@
+/*--------------------General-----------------------*/
+
+body {
+  direction: rtl;
+}
+
+p {
+  color: #777;
+  line-height: 26px;
+  margin: 0 ;
+}
+
+/*--------------------Statistics----------------------*/
+
+.points {
+  margin: 0px;
+}
+
+.points h1 {
+  font-size: 3vw;
+}
+
+.points h2 {
+  font-size: 2vw;
+}
+
+.success {
+  color: #;
+}
+
+.col-12 h2 {
+  font-size: 2vw;
+}
+
+.col-12 h1 {
+  font-size: 3vw;
+}
+
+.wrapper {
+  width: 12vw;
+  height: 12vw;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #eee;
+  transition: all 0.5s ease-in-out;
+}
+
+.wrapper:hover {
+  width: 12vw;
+  height: 12vw;
+  margin: 0 auto;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.5s ease-in-out;
+}
+
+.col-4:nth-of-type(1) > .points > .wrapper {
+  border: 5px solid red;
+  border-radius: 50%;
+  transition: all 0.5 ease-in-out;
+}
+
+.col-4:nth-of-type(2) > .points > .wrapper {
+  border: 5px solid blue;
+  border-radius: 50%;
+  transition: all 0.5 ease-in-out;
+}
+
+.col-4:nth-of-type(3) > .points > .wrapper {
+  border: 5px solid green;
+  border-radius: 50%;
+  transition: all 0.5 ease-in-out;
+}
+
+.col-12 > .points > .wrapper {
+  border: 5px solid black;
+  border-radius: 50%;
+  transition: all 0.5 ease-in-out;
+}
+
+/*----------------------hover-----------------*/
+
+.col-4:nth-of-type(1) > .points > .wrapper:hover {
+  border: 10px solid rgb(255, 98, 98);
+  border-radius: 50%;
+  background-color: red;
+  transition: all 0.5 ease-in-out;
+}
+
+.col-4:nth-of-type(2) > .points > .wrapper:hover {
+  border: 10px solid rgb(74, 74, 255);
+  border-radius: 50%;
+  background-color: blue;
+  transition: all 0.5 ease-in-out;
+}
+
+.col-4:nth-of-type(3) > .points > .wrapper:hover {
+  border: 10px solid rgb(3, 167, 3);
+  border-radius: 50%;
+  background-color: green;
+  transition: all 0.5 ease-in-out;
+}
+
+.col-12 > .points > .wrapper:hover {
+  border: 10px solid rgb(48, 48, 48);
+  border-radius: 50%;
+  background-color: black;
+  transition: all 0.5 ease-in-out;
+}
+
+.label {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/*--------------------- progress Bars ------------------*/
+ol::before {
+    content: ' ';
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+}
+
+.col-12 h3 {
+  font-size: 1.6vw;
+}
+
+li span {
+  font-size: 1.1vw;
+}
+
+.barWrapper {
+    direction: rtl;
+    margin: 15px 0px 15px 0px;
+}
+
+.tooltip {
+  position: relative;
+  float: right;
+}
+
+.tooltip > .tooltip-inner {
+  background-color: #eebf3f;
+  padding: 5px 15px;
+  color: rgb(23, 44, 66);
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.popOver + .tooltip > .tooltip-arrow {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #eebf3f;
+}
+
+.progress {
+  border-radius: 0;
+  overflow: visible;
+}
+
+.progress-bar {
+  background: rgb(23, 44, 60);
+  -webkit-transition: width 1.5s ease-in-out;
+  transition: width 1.5s ease-in-out;
+}
+
+.progressText {
+    float: right;
+    width: 80px;
+    margin-top: -10px;
+}
+
+/*------------------media screen---------------------*/
+
+@media(max-width: 992px) {
+  .wrapper {
+    width: 25vw;
+    height: 25vw;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #eee;
+    transition: all 0.5s ease-in-out;
+  }
+  .wrapper:hover {
+    width: 25vw;
+    height: 25vw;
+    margin: 0 auto;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .points h1 {
+    font-size: 6vw;
+  }
+
+  .points h2 {
+    font-size: 5vw;
+  }
+
+  .points p {
+    font-size: 3.5vw;
+  }
+
+  .col-12 h2 {
+    font-size: 4.5vw;
+  }
+  
+  .col-12 h1 {
+    font-size: 5.5vw;
+  }
+
+  li span {
+    font-size: 4.3vw;
+  }
+
+  .col-12 h3 {
+    font-size: 5.2vw;
+  }
+
+  .progressText {
+    float: right;
+    width: 80px;
+    margin-top: -10px;
+  }
+}
