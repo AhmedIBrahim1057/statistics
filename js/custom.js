@@ -5,7 +5,7 @@ var myChart = new Chart(ctx, {
         labels: ['فوز' ,'خسارة'],
         datasets: [{
             label: '',
-            data: [7000, 3533],
+            data: [5000, 3533],
             backgroundColor: [
                 '#2d94d8',
                 '#f9395f',

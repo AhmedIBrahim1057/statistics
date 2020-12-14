@@ -129,7 +129,8 @@ ol::before {
 }
 
 li span {
-  font-size: 1.1vw;
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 .barWrapper {
@@ -169,8 +170,8 @@ li span {
 
 .progressText {
     float: right;
-    width: 80px;
     margin-top: -10px;
+    margin-left: 20px;
 }
 
 /*------------------media screen---------------------*/
@@ -214,17 +215,9 @@ li span {
     font-size: 5.5vw;
   }
 
-  li span {
-    font-size: 4.3vw;
-  }
-
   .col-12 h3 {
     font-size: 5.2vw;
   }
 
-  .progressText {
-    float: right;
-    width: 80px;
-    margin-top: -10px;
-  }
+  
 }
