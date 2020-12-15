@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statistics</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+
+  <body>
+    <div class="container my-2">
+      
+      <!-- pie Chart -->
+      <div class="row">
+        <div class="col-12">
+          <div class="chartContainer">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+
+        <div class="col-12 text-center pt-3">
+          <h2>عدد الادوار اللتي انتهت بنجاح</h2>
+          <h1 class="success">10533</h1>
+        </div>
+      </div>
+
+      <!-- Statistics -->
+      <div class="row pt-3">
+        <div class="col-4">
+          <div class="points">
+            <div
+              class="wrapper d-flex justify-content-center align-items-center flex-column"
+            >
+              <h1><strong>40</strong></h1>
+              <h2>نقطة</h2>
+            </div>
+            <div class="label">
+              <p><strong>متوسط الادخار بنهاية اللعبة</strong></p>
+              <p><strong>"الادوار الناجحة"</strong></p>
+              <p><strong>التي انتهت بالفوز</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="points">
+            <div
+              class="wrapper d-flex justify-content-center align-items-center flex-column"
+            >
+              <h1><strong>30</strong></h1>
+              <h2>نقطة</h2>
+            </div>
+            <div class="label">
+              <p><strong>متوسط التبرع </strong></p>
+              <p><strong>"الادوار الناجحة فقط"</strong></p>
+              <p><strong>الفوز</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="points">
+            <div
+              class="wrapper d-flex justify-content-center align-items-center flex-column"
+            >
+              <h1><strong>980</strong></h1>
+            </div>
+            <div class="label">
+              <p><strong>متوسط الدخل </strong></p>
+              <p><strong>"الادوار الناجحة فقط"</strong></p>
+              <p><strong>الفوز</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 pt-3">
+          <div class="points">
+            <div
+              class="wrapper d-flex justify-content-center align-items-center flex-column"
+            >
+              <h1><strong>522</strong></h1>
+              <h2>نقطة</h2>
+            </div>
+            <div class="label">
+              <p><strong>مقدار الاستثمار</strong></p>
+              <p><strong>"النقاط المضافة في محطة الفواتير"</strong></p>
+              <p><strong>الفوز</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress -->
+      <div class="row pt-5">
+        <div class="col-12 d-flex justify-content-right pb-3">
+          <h3 class="subTitle">ترتيب الشراء</h3>
+        </div>
+        <div class="col-12 text-right">
+          <ol class="rectangle-list">
+            <li class="my-3">
+              <ul>
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>Books</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="85%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b> احمد ابراهيم </b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="35"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="35%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>Car</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="65"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="65%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="my-5">
+              <ul>
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>مشروع</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="10"
+                        aria-valuemax="100"
+                        style=""
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="70%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>كتاب</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="50"
+                        aria-valuemin="10"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="50%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>ادوات</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="10"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="80%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="my-5">
+              <ul>
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>سيارة</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="50"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="50%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>منزل</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="70%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>مشروع</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="90%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="my-5">
+              <ul>
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>ادوات</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="25%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>كتاب</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="90%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>مشروع</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="78"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="78%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="my-5">
+              <ul>
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>ادوات</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="60%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>منزل</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="80%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>ادوات</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="60%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="my-3">
+              <ul>
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>منزل</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="85%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>مشروع</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="35"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="35%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>سيارة</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="65"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="65%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="my-5">
+              <ul>
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>مشروع</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="10"
+                        aria-valuemax="100"
+                        style=""
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="70%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>كتاب</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="50"
+                        aria-valuemin="10"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="50%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>ادوات</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="10"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="80%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="my-5">
+              <ul>
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>سيارة</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="50"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="50%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>منزل</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="70%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>مشروع</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="90%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="my-5">
+              <ul>
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>ادوات</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="25%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>كتاب</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="90%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>مشروع</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="78"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="78%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="my-5">
+              <ul>
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>ادوات</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="60%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>منزل</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="80%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="barWrapper">
+                    <span class="progressText"><b>ادوات</b></span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span
+                          class="popOver"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="60%"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
