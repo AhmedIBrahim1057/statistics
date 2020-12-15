@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.decoration{
+    width: 100%;
+    height: auto;
+}
+
+.right-line-wrapper{
+    position: fixed;
+    top: 0px;
+    right: .05%;
+}
+
+
+.footer-line-wrapper{
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    width: 80%;
+    height: 25px;
+}
+
+
+.right-pattern-wrapper{
+    position: fixed;
+    bottom: 23px;
+    right: 39px;
+    width: 15%;
+}
+
+.earth-wrapper{
+    position: fixed;
+    top: 80px;
+    right: 39px;
+    width: 15%;
+}
+
+.left-pattern-wrapper {
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    width: 12%;
+}
+
+.mask-group-wrapper{
+    position: fixed;
+    bottom: 60px;
+    left: 8%;
+    width: 7%;
+}
+
+.content{
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+}
+
+.social{
+    width: 100px;
+    position: fixed;
+    bottom: 15px;
+    right: 22%;
+}
+

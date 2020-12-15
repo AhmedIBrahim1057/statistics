@@ -3,6 +3,9 @@
 body {
   direction: rtl;
 }
+::-webkit-scrollbar {
+  display: none;
+  }
 
 p {
   color: #777;
@@ -125,7 +128,7 @@ ol::before {
 }
 
 .col-12 h3 {
-  font-size: 1.6vw;
+  font-size: 2vw;
 }
 
 li span {
@@ -174,9 +177,16 @@ li span {
     margin-left: 20px;
 }
 
-/*------------------media screen---------------------*/
 
-@media(max-width: 992px) {
+
+/*------------------media screen---------------------*/
+@media(max-width: 1000px) {
+  .subTitle {
+    font-size: 9.2vw;
+  }
+}
+
+@media(max-width: 500px) {
   .wrapper {
     width: 25vw;
     height: 25vw;
@@ -219,5 +229,8 @@ li span {
     font-size: 5.2vw;
   }
 
-  
+  .progressText {
+    font-size: 3.2vw;
+  }
+
 }
