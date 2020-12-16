@@ -140,7 +140,7 @@ ol::before {
 
 li span {
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .barWrapper {
@@ -243,7 +243,12 @@ li span {
   p {
     color: #777;
     line-height: 20px;
-    margin: 0;
+    margin: 0;  
+  }
+
+  li span {
+    font-size: 20px;
+    margin-top: -5px;
   }
 
 }
