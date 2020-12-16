@@ -194,9 +194,9 @@ li span {
 }
 
 @media(max-width: 500px) {
-  /* .wrapper {
-    width: 25vw;
-    height: 25vw;
+  .wrapper {
+    width: 27vw;
+    height: 27vw;
     margin: 0 auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #eee;
@@ -234,7 +234,7 @@ li span {
 
   .col-12 h3 {
     font-size: 5.2vw;
-  } */
+  }
 
   .progressText {
     font-size: 5.2vw;
