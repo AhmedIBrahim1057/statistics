@@ -13,6 +13,13 @@ p {
   margin: 0 ;
 }
 
+ol {
+  padding-inline-start: 20px !important;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
 /*--------------------Statistics----------------------*/
 
 .points {
@@ -230,7 +237,20 @@ li span {
   }
 
   .progressText {
-    font-size: 3.2vw;
+    font-size: 5.2vw;
+  }
+
+  p {
+    color: #777;
+    line-height: 20px;
+    margin: 0;
   }
 
 }
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
